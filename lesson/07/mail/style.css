@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f5f5f5;
+    transition: all 0.5s ease-in-out;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border-bottom: solid 2px #525252;
+}
+
+.logo {margin-left: 20px;}
+.menu {margin-right: 20px;}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    gap: 25px;
+    height: 100vh;
+    width: 120px;
+    padding-top: 30px;
+}
+
+aside a:nth-child(1) {
+    background-color: #d5d5d5;
+    padding: 10px;
+}
+
+a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+main {
+    width: calc(100% - 120px);
+    float: right;
+}
+
+.inbox {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.post {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    border-bottom: solid 2px #5252521f;
+    padding: 20px 0;
+}
+
+.post:before {
+    content: " ";
+    background-image: url(../mail/star.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.list {
+    display: flex;
+    gap: 40px;
+}
+
+.list p:nth-child(3) {
+    opacity: 0.6;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 16em;
+}
+
+.date::before {
+    content: " ";
+    background-image: url(../mail/clip.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 550px) and (max-width: 800px) {
+    .list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .list p:nth-child(3) {
+        width: 17em;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+    .list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    aside a span {
+        display: none;
+    }
+
+    .list p:nth-child(3) {
+        width: 13em;
+    }
+}
+
+
+
+
+/* Навигация для заданий */
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 5%;
+    bottom: 0px;
+    width: 60px;
+    height: 40px;
+    background-color: #ffb273;
+    border-radius: 8px 8px 0 0;
+}
+
+#nav:hover {
+    height: 60px;
+    transition: height 0.3s ease-out;
+}
+
+#nav:hover img {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+#nav a {
+    display: block;
+    color: #f1f1f1;
+    opacity: 1;
+    padding: 25px
+}
+
+#nav img {
+    width: 25px;
+    height: 25px;
+}
