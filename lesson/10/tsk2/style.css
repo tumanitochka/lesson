@@ -1,0 +1,35 @@
+body {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 200px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form input:nth-child(2) {
+    border: solid 1px green;
+}
+
+form input:nth-child(2)::placeholder {
+    color: green;
+}
+
+input::after {
+    content: "✔";
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+form input:nth-child(3) {
+    border: solid 1px red;
+}
+
+form input:nth-child(3)::placeholder {
+    color: red;
+}
