@@ -16,6 +16,12 @@ body {
     padding: 23px;
 }
 
+img {
+    position: absolute;
+    top: 63px;
+    left: 360px;
+}
+
 .card::before {
     content: "CREDIT CARD DETAILS";
     display: flex;
