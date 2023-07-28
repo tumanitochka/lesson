@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3. Реализовать html-страницу с формой для регистрации и ввода персональных данных</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="register">
+            <form action="#">
+                <label for="register">Register form</label>
+                <input type="text" id="register" placeholder="Username">
+                <input type="email" id="register" placeholder="Email adress">
+                <div class="pass">
+                    <input type="password" id="register" placeholder="Password">
+                    <input type="password" id="register" placeholder="Config password">
+                </div>
+            </form>
+        </div>
+        <div class="person">
+            <form action="#">
+                <label for="person">Personal datalis</label>
+                <input type="text" id="person" placeholder="First name">
+                <input type="text" id="person" placeholder="Last Name">
+                <div class="pers">
+                    <select name="person" id="person">
+                        <option>Male</option>
+                        <option>Fameli</option>
+                    </select>
+                    <input type="date" name="person" id="person">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="formFooter">
+        <input type="checkbox" name="person" id="offer">
+        <label for="offer">I want to receiw mens and special offers</label><br><br>
+        <input type="checkbox" name="person" id="terms">
+        <label for="terms">I agree with the Terms and Coditions</label>
+    </div>
+    <hr>
+    <button type="submit">SUBMIT</button>
+</body>
+</html>
