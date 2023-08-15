@@ -1,4 +1,2 @@
-let message;
-message = 'Я JavaScript!';
-
-alert(message);
+let message = 'Я JavaScript!';
+value(message);
