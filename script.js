@@ -1,5 +1,5 @@
-// let message = 'Я JavaScript!';
-// alert('message');
+let message = 'Все в консоли!';
+alert('message');
 
 console.log('Привет из скрипта!')
 
