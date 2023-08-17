@@ -1,36 +1,53 @@
-// let message = 'Внимание! Срочно откройте консоль!'
-// alert(message)
+// let a = prompt('Первое число')
+// let b = prompt('Второе число')
 
-// console.log('Привет из скрипта!')
-
-// let web = 3
-// var web2 = 4
-// const web3 = 5
-// console.log('web =',web,'web2 =',web2,'web3 =',web3)
-
-// web = 6
-// web2 = 7
-// console.log('web =',web,'web2 =',web2,'web3 =',web3)
-
-// let web4 = web + web3
-// console.log(web,'+',web3,'=',web4)
+// if (a > b) {
+//     alert( 'Первое число больше, чем второе!' );
+//   } else if  (a < b) {
+//     alert( 'Первое число меньше, чем второе!' )
+//   } else {
+//     alert( 'Первое число равно второму!' )
+//   }
 
 
-// let admin
-// let name = "Джон"
-//     admin = name
+// Первое задание
 
-// alert(admin)
+// let age = prompt("Введите Ваш возраст")
+// let result = age >= 18
+
+// if ( result >= true) {
+//     alert( 'Доступ разрешен' )
+// } else {
+//     alert( 'Доступ запрещен' )
+// }
 
 
-// let years = prompt('Какого Вы года рождения?')
-//     years = 2023 - years
 
-// alert('Ваш возраст: ' + years + '!')
+// Второе задание
+
+// let welcomeMessage = "Добро пожаловать, администратор!"
+// let username = prompt('Кто вы?')
+
+// if (username == 'admin') {
+//     alert(welcomeMessage)
+// } else {
+//     alert('Доступ запрещен')
+// }
 
 
-let one = Number(prompt('Введите первое число'))
-let calc = prompt('Введите символ:')
-let two = Number(prompt('Введите второе число'))
 
-console.log(eval(`${one}${calc}${two}`))
+// Третье задание
+
+// let num = prompt('Введите число')
+// let evenOrOdd = 'Число четное'
+
+// if ((num % 2) == 0) {
+//     alert(evenOrOdd)
+// } else {
+//     alert('Число нечетное')
+// }
+
+
+
+// Четвертое задание
+
