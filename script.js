@@ -1,53 +1,96 @@
-// let a = prompt('Первое число')
-// let b = prompt('Второе число')
+// 1 задача
 
-// if (a > b) {
-//     alert( 'Первое число больше, чем второе!' );
-//   } else if  (a < b) {
-//     alert( 'Первое число меньше, чем второе!' )
-//   } else {
-//     alert( 'Первое число равно второму!' )
-//   }
+// let age = prompt('Сколько вам лет?')
+// let result  = (age >= 18) ? 'Доступ разрешен' : 'Доступ запрещен'
 
-
-// Первое задание
-
-// let age = prompt("Введите Ваш возраст")
-// let result = age >= 18
-
-// if ( result >= true) {
-//     alert( 'Доступ разрешен' )
-// } else {
-//     alert( 'Доступ запрещен' )
-// }
+// alert(result)
 
 
 
-// Второе задание
+// 2 задача
 
-// let welcomeMessage = "Добро пожаловать, администратор!"
-// let username = prompt('Кто вы?')
+// let welcomeMessage = 'Добро пожаловать, администратор!'
+// let username = prompt('Ваш логин')
 
-// if (username == 'admin') {
-//     alert(welcomeMessage)
-// } else {
-//     alert('Доступ запрещен')
-// }
+//     if (username == 'admin') {
+//         alert(welcomeMessage)
+//     } else {
+//         alert('Доступ запрещен')
+//     }
 
 
 
-// Третье задание
+// 3 задача
 
-// let num = prompt('Введите число')
-// let evenOrOdd = 'Число четное'
-
-// if ((num % 2) == 0) {
-//     alert(evenOrOdd)
+// let evenOrOdd = prompt('Введите число') % 2
+// if (evenOrOdd == 0) {
+//     alert('Число четное')
 // } else {
 //     alert('Число нечетное')
 // }
 
 
 
-// Четвертое задание
+// 4 задание
+
+
+// let a = 2;
+// let b = 3;
+// let comparisonResult = (a > b) ? 'a больше b' : (a < b) ? 'a меньше b' : (a = b) ? 'a равна b' : false
+
+// console.log(comparisonResult)
+
+
+
+// 5 задание
+
+// let bothConditions = (isStudent && hasJob) ? true : false
+// console.log(bothConditions)
+
+
+
+// 6 задание
+
+// let estimation = prompt('Введите свой балл')
+// let result = (estimation >= 60) ? 'Вы сдали' : 'Вы не сдали'
+
+// alert(result)
+
+
+
+// 7 задание
+
+
+// let age = prompt('Введите ваш возраст')
+// let result = (age < 18) ? 'Вы несовершеннолетний' : (18 <= age && age <= 65) ? 'Вы взрослый' : 'Вы пожилой человек'
+// alert(result)
+
+
+
+// 8 задание
+
+
+
+
+
+
+
+
+
+
+
+
+// 15 задание
+
+// let month = prompt('Какой сейчас месяц?')
+
+// if (month == 'июнь' || 'июль' || 'август') {
+//     alert('Сейчас лето!')
+// } else if (month == 'сентябрь' || 'октябрь' || 'ноябрь') {
+//     alert('Сейчас осень!')
+// } else if (month == 'декабрь' || 'январь' || 'февраль') {
+//     alert('Сейчас зима!')
+// } else if (month == 'март' || 'апрель' || 'май') {
+//     alert('Сейчас весна!')
+// }
 
