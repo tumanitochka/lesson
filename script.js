@@ -96,11 +96,35 @@
 
 // 11 задание
 
-let a = prompt('Введите первое число')
-let b = prompt('Введите второе число')
-let result = ((a > b) == true) ? a :
-((b > a) == true) ? b : false 
-alert(result)
+// let a = Number(prompt('Введите первое число'))
+// let b = Number(prompt('Введите второе число'))
+// let result = ((a > b) == true) ? a :
+// ((b > a) == true) ? b : false
+// alert(result)
+
+
+
+// 12 задание
+
+// let a = prompt('Введите вашу оценку от 1 до 100')
+// let result = (a >= 90) ? 'Отлично' : (a >= 70) ? 'Хорошо' : 'Удовлетворительно'
+// alert(result)
+
+
+
+// 13 задание
+
+// let a = prompt('Введите число') % 2
+// let result = (a == 0) ? 'число четное' : 'Число нечотное'
+// alert(result)
+
+
+
+// 14 задание
+
+// let a = prompt('Выберите язык')
+// let result = (a == 'английский') ? 'Hello!' : (a == 'французский') ? 'Bonjour' : 'Такого языка нет в системе'
+// alert(result)
 
 
 // 15 задание
@@ -116,4 +140,3 @@ alert(result)
 // } else if (month == 'март' || 'апрель' || 'май') {
 //     alert('Сейчас весна!')
 // }
-
