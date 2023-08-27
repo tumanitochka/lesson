@@ -23,14 +23,64 @@
 
 // 3 задание
 
-// number = prompt('Введите трехзначное число');
-// let a = Number(nmb % 10);
-// let b = Number((nmb - a) / 10 % 10);
-// let c = Number((nmb - a - b * 10) / 100);
+// number = prompt('Введите трехзначное число')
+// let a = Number(nmb % 10)
+// let b = Number((nmb - a) / 10 % 10)
+// let c = Number((nmb - a - b * 10) / 100)
 
-// // alert('Перевертыш: ' + (a * 100 + b * 10 + c));
+// // alert(a * 100 + b * 10 + c)
 
 
 
 // 4 задание
 
+// let age = +prompt('Укажите ваш возраст в поле ввода')
+// let result = (age >= 0 && age <= 2) ? 'ребенок' :
+// (age >= 12 && age < 18) ? 'подросток' :
+// (age >= 18 && age < 60) ? 'взрослый' :
+// (age >= 60) ? 'пенсионер' : 'не человек'
+
+// alert(result)
+
+
+
+// 5 задание
+
+// let value = prompt('Введите цифру от 0 до 9')
+// let result = (value == 0) ? ')' :
+// (value == 1) ? '!' :
+// (value == 2) ? '@' :
+// (value == 3) ? '#' :
+// (value == 4) ? '$' :
+// (value == 5) ? '%' :
+// (value == 6) ? '^' :
+// (value == 7) ? '&' :
+// (value == 8) ? '*' :
+// (value == 9) ? '(' : 'Вы ввели число!'
+
+// alert(result)
+
+
+
+// 6 задание
+
+// let value = prompt('Введите трехзначное число и мы проверим на сходство цифр')
+// let a = value % 10
+// let b = Number((value - a) / 10 % 10)
+// let c = Number((value - a - b * 10) / 100)
+// let result = (a == b || a == c || b == c) ? 'В вашем числе есть одинаковые цифры.' : 'Одинаковых цифр нет!'
+// alert(result)
+
+
+
+// 7 задание
+
+// let age = prompt('Введите год рождения')
+// let result = (age % 4 == 0 && age % 100 != 0 || age % 400 == 0) ? 'Высокосный' : 'Не высокосный'
+// alert(result)
+
+
+
+// 8 задание
+
+let value = 56765
