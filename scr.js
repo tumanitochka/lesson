@@ -75,12 +75,12 @@
 
 // 7 задание
 
-// let age = prompt('Введите год рождения')
-// let result = (age % 4 == 0 && age % 100 != 0 || age % 400 == 0) ? 'Высокосный' : 'Не высокосный'
-// alert(result)
+let age = prompt('Введите год рождения')
+let result = (age % 4 == 0 && age % 100 != 0 || age % 400 == 0) ? 'Высокосный' : 'Не высокосный'
+alert(result)
 
 
 
 // 8 задание
 
-let value = 56765
+// let value = 56765
