@@ -75,12 +75,22 @@
 
 // 7 задание
 
-let age = prompt('Введите год рождения')
-let result = (age % 4 == 0 && age % 100 != 0 || age % 400 == 0) ? 'Высокосный' : 'Не высокосный'
-alert(result)
+// let age = prompt('Введите год рождения')
+// let result = ((age % 4 == 0) && (age % 100 != 0) || (age % 400 == 0)) ? 'Высокосный' : 'Не высокосный'
+// alert(result)
 
 
 
 // 8 задание
 
-// let value = 56765
+// let value = prompt('Введите пятизначное число')
+// let a = value % 10
+// let b = (value - a) / 10 % 10
+// let c = (value - a - b * 10) / 100 % 10
+// let i = (value - a - (b * 10) - (c * 100)) / 1000
+// let r = a * 10 + b
+
+// let result = (i === r) ? 'Число палиндромное' : 'Число не палиндромное'
+
+
+// alert(result)
