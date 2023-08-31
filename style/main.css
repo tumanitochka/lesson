@@ -1,0 +1,21 @@
+.robot {
+    height: 120px;
+    width: 105px;
+    background: url(../style/img/sprite2.png) 0px 0px;
+    animation: play 0.8s steps(8) infinite, step 5s linear infinite;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+}
+
+@keyframes play {
+    100% {
+        background-position: -870px;
+    }
+}
+
+@keyframes step {
+    100% {
+        left: 100%;
+    }
+}
