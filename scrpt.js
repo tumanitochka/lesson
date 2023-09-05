@@ -70,3 +70,30 @@ while (num > 0)
     console.log(num)
 }
 
+
+
+
+
+
+
+
+
+// Напишите функцию calculate, которая принимает два числа и callback-функцию для выполнения операции над этими числами. Функция calculate должна передать эти числа в callback-функцию и вернуть результат.
+
+
+
+
+function calculate(a, b, sum) {
+    if (confirm(question)) yes()
+    else no();
+  }
+
+  calculate(
+    "Вы согласны?",
+    function() { prompt("Введите первое число"); },
+    function() { prompt("Введите второе число"); }
+  );
+
+  function sum(a,b) {
+    console.log(a + b)
+  }
