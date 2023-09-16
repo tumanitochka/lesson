@@ -102,7 +102,7 @@
 let circle = {
     s: 0,
     calculateArea: function(x){
-        this.s = 2*(3*2)
+        this.s = 3.14*(180*90)
     }
 }
 
