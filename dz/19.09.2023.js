@@ -1,35 +1,55 @@
 // Выдано 19.09.2023
 
-` Напишите код, выполнив задание из каждого пункта отдельной строкой:
+// Привет, obje - https://learn.javascript.ru/task/hello-object
 
-Создайте пустой объект user.
-Добавьте свойство name со значением John.
-Добавьте свойство surname со значением Smith.
-Измените значение свойства name на Pete.
-Удалите свойство name из объекта. `
+let user = {} // cоздайте пустой объект user
 
-let user = {}
-user.name = 'John'
-user.surname = 'Smith'
+user.name = 'John' // добавьте свойство name со значением John
+user.surname = 'Smith' // добавьте свойство surname со значением Smith
+user.name = 'Pete' // измените значение свойства name на Pete
 
-user.name = 'Pete'
+delete user.name // удалите свойство name из объекта
 
-delete user.name
 
-console.log(user)
 
 // Проверка на пустоту - https://learn.javascript.ru/task/is-empty
 
 function isEmpty(obj) {
     for (let key in obj) {
-      // если тело цикла начнет выполняться - значит в объекте есть свойства
-      return false;
-    }
-    return true;
+      return false
+    } // если цикл запуститься, то false, иначе true
+    return true
   }
 
-let schedule = {};
-alert( isEmpty(schedule) ); // true
 
-schedule["8:30"] = "get up";
-alert( isEmpty(schedule) ); // false
+
+// Объекты-константы? - https://learn.javascript.ru/task/const-object
+
+// Можно ли изменить объект, объявленный с помощью const? Как вы думаете?
+
+const obj = {
+    name: "John",
+  }
+
+  // это будет работать!
+  obj.name = "Pete"
+
+
+
+// Сумма свойств объекта - https://learn.javascript.ru/task/sum-object
+
+// У нас есть объект, в котором хранятся зарплаты нашей команды:
+
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+  };
+  
+let sum = 0
+for (let key in salaries) {
+    sum += salaries[key];
+  }
+  
+  console.log(salaries[key]);
+
