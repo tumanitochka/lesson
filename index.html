@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
-    <script src="./28-09-2023/scrypy.js"></script>
+    <header>
+        <h1>Курс по веб-разработке</h1>
+    </header>
+    <main>
+        <div class="content">
+            <div id="input">
+                <input type="text" id="name" value="Ваше имя">
+                <input type="text" id="age" value="Ваш возраст">
+                <input type="text" id="city" value="Город">
+                <input type="text" id="phone" value="Номер телефона">
+                <input type="submit" onclick="saveAdd()" value="Записать на курс">
+            </div>
+            <div id="entry">
+                <div id="btn">
+                    <button>Показать имена</button>
+                    <button>Показать возраст</button>
+                    <button>Показать города</button>
+                    <button>Показать номера телефонов</button>
+                </div>
+                <div class="result">
+                    <ol type="1">
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./03-10-23/script.js"></script>
 </body>
 </html>
