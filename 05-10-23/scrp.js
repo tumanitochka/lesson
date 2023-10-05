@@ -22,7 +22,15 @@ const title = ["HTML", "JavaScript", 6, 10, "CSS", 5]
 
 for(let index in title){
     console.log(title[index])
+
+    typeof(title[index]) == String
 }
+
+
+
+
+
+sololearn - сайт
 
 
 
