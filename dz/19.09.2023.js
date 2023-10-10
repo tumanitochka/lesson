@@ -41,10 +41,16 @@
 // Задание 2 - https://learn.javascript.ru/task/accumulator
 
 
-let accumulator = new Accumulator(1); // начальное значение 1
+function Accumulator(startingValue) {
+  this.value = startingValue
 
-accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
-accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
+  this.read = function() {
+    this.value += +prompt('Сколько нужно добавить?', 0)
+  }
 
-alert(accumulator.value); // выведет сумму этих значений
+}
 
+let accumulator = new Accumulator(1)
+accumulator.read()
+accumulator.read()
+alert(accumulator.value)
