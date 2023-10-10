@@ -50,7 +50,6 @@ function Accumulator(startingValue) {
 
 }
 
-let accumulator = new Accumulator(1)
-accumulator.read()
+let accumulator = new Accumulator(0)
 accumulator.read()
 alert(accumulator.value)
