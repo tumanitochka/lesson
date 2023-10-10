@@ -9,27 +9,27 @@ mul() возвращает произведение этих свойств. `
 
 
 
-function Calculator() {
+// function Calculator() {
 
-    this.read = function() {
-      this.a = +prompt('a?', 0)
-      this.b = +prompt('b?', 0)
-    }
+//     this.read = function() {
+//       this.a = +prompt('a?', 0)
+//       this.b = +prompt('b?', 0)
+//     }
   
-    this.sum = function() {
-      return this.a + this.b
-    }
+//     this.sum = function() {
+//       return this.a + this.b
+//     }
   
-    this.mul = function() {
-      return this.a * this.b
-    }
-  }
+//     this.mul = function() {
+//       return this.a * this.b
+//     }
+//   }
   
-  let calculator = new Calculator()
-  calculator.read()
+//   let calculator = new Calculator()
+//   calculator.read()
   
-  console.log( "Сумма = " + calculator.sum() )
-  console.log( "Произведение = " + calculator.mul() )
+//   console.log( "Сумма = " + calculator.sum() )
+//   console.log( "Произведение = " + calculator.mul() )
 
 
 
@@ -50,3 +50,33 @@ function Calculator() {
 // и прибавления его к value.
 // Другими словами, свойство value представляет собой сумму всех введённых 
 // пользователем значений, с учётом начального значения startingValue.
+
+
+// 
+
+
+
+
+
+
+// function Accumulator(startingValue) {
+//   const obj = {
+//     value: 0,
+//   }
+
+//   function read()
+// }
+
+function Accumulator() {
+
+  this.read = function() {
+    this.a = 2
+    console.log(a)
+  }
+
+}
+
+let acum = new Accumulator
+
+console.log(acum.read())
+
