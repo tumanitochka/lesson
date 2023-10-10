@@ -54,7 +54,7 @@ input[type=submit] {
     cursor: pointer;
     text-transform: uppercase;
     
-
+ 
     &:hover {
         filter: brightness(1.2);
         
