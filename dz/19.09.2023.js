@@ -8,36 +8,28 @@ sum() возвращает сумму этих свойств.
 mul() возвращает произведение этих свойств. `
 
 
-new Calculator 
 
+function Calculator() {
 
-  // переменная, в которой хранится выбранное математическое действие
-  var op; 
-
-  // функция расчёта
-  function func() {
-  	// переменная для результата
-    var result;
-    // получаем первое и второе число
-    var num1 = Number(document.getElementById("num1").value);
-    var num2 = Number(document.getElementById("num2").value);
-    // смотрим, что было в переменной с действием, и действуем исходя из этого
-    switch (op) {
-      case '+':
-        result = num1 + num2;
-        break;
-      case '-':
-        result = num1 - num2;
-        break;
-      case '*':
-        result = num1 * num2;
-        break;
-      case '/':
-        result = num1 / num2;
-        break;
-    }
-
+    this.read = function() {
+      this.a = +prompt('a?', 0);
+      this.b = +prompt('b?', 0);
+    };
+  
+    this.sum = function() {
+      return this.a + this.b;
+    };
+  
+    this.mul = function() {
+      return this.a * this.b;
+    };
   }
+  
+  let calculator = new Calculator();
+  calculator.read();
+  
+  console.log( "Сумма = " + calculator.sum() );
+  console.log( "Произведение = " + calculator.mul() );
 
 
 
@@ -45,22 +37,16 @@ new Calculator
 
 
 
+// Task 2
+// Создайте new Accumulator
 
+// Создайте функцию-конструктор Accumulator(startingValue).
 
+// Объект, который она создаёт, должен уметь следующее:
 
-
-
-
-Task 2
-Создайте new Accumulator
-
-Создайте функцию-конструктор Accumulator(startingValue).
-
-Объект, который она создаёт, должен уметь следующее:
-
-Хранить «текущее значение» в свойстве value. Начальное значение 
-устанавливается в аргументе конструктора startingValue.
-Метод read() должен использовать prompt для считывания нового числа 
-и прибавления его к value.
-Другими словами, свойство value представляет собой сумму всех введённых 
-пользователем значений, с учётом начального значения startingValue.
+// Хранить «текущее значение» в свойстве value. Начальное значение 
+// устанавливается в аргументе конструктора startingValue.
+// Метод read() должен использовать prompt для считывания нового числа 
+// и прибавления его к value.
+// Другими словами, свойство value представляет собой сумму всех введённых 
+// пользователем значений, с учётом начального значения startingValue.
