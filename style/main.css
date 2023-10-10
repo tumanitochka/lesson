@@ -47,7 +47,7 @@ input {
 
 input[type=submit] {
     background-color: #222222;
-    color: #f1f1f1;
+    color: white;
     width: 262px;
     height: 50px;
     font-size: 16px;
@@ -80,12 +80,18 @@ main {
     justify-content: space-between;
 }
 
-#input {
+
+/* Левый блок */
+
+form {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 15rem;
 }
+
+
+/* Правый блок */
 
 #btn {
     display: flex;
@@ -117,6 +123,8 @@ button {
     width: 60%;
 }
 
+/* Стили на результат */
+
 .result {
     margin-top: 20px;
     background: rgb(34,34,34);
@@ -126,10 +134,28 @@ button {
     width: 96%;
     height: 12rem;
     padding: 10px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 ol {
     margin-left: 20px;
     margin-top: 1px;
 }
+
+
+
+/* Стили для скрола */
+
+.result::-webkit-scrollbar-track {
+    border: 1px solid #000;
+    padding: 2px 0;
+    background-color: #404040;
+  }
+  .result::-webkit-scrollbar {
+    width: 10px;
+  }
+  .result::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #737272;
+    border: 1px solid #000;
+  }
