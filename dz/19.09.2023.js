@@ -25,11 +25,11 @@ function Calculator() {
     }
   }
   
-  let calculator = new Calculator();
-  calculator.read();
+  let calculator = new Calculator()
+  calculator.read()
   
-  console.log( "Сумма = " + calculator.sum() );
-  console.log( "Произведение = " + calculator.mul() );
+  console.log( "Сумма = " + calculator.sum() )
+  console.log( "Произведение = " + calculator.mul() )
 
 
 
