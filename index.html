@@ -5,8 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Домашние задания | Нуржанов Олег</title>
     <link rel="stylesheet" href="./style/main.css">
+    <style>
+        ul {
+            display: none;
+        }
+
+        .nav-mobile:target ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            position: relative;
+            bottom: 3.2rem;
+            left: 2.5rem;
+            list-style: none;
+        }
+
+        ul > li:first-child {
+            font-size: 40px;
+            position: relative;
+            left: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <script src="./dz/26.09.2023.js"></script>
+    <div class="nav-mobile" id="bar">
+        <a href="#bar" style="font-size: 40px;">☰</a>
+        <ul>
+            <li><a href="#">⚔</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#start">About</a></li>
+            <li><a href="#course">Courses</a></li>
+            <li><a href="#community">Blog</a></li>
+        </ul>
+    </div>
+    <script src="./scrypt.js"></script>
 </body>
 </html>
