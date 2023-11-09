@@ -84,7 +84,7 @@ pre {
     font-size: 80px;
     color: var(--bg);
 
-    position: absolute;
+    position: fixed;
     bottom: 5%;
     right: 5%;
 }
