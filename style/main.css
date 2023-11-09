@@ -1,162 +1,60 @@
+:root {
+    --bg: #573d40;
+    --href: #e6b9a6;
+    --button: #d38778;
+}
+
 * {
     padding: 0;
     margin: 0;
-
-    transition: all 0.3s ease;
+    outline: none;
+    border: none;
+    background: none;
+    box-shadow: none;
 }
 
 html,
 body {
-    
-    background-color: #141414;
-    color: white;
+    width: 100%;
+    height: 100%;
 }
 
 body {
-    margin: 0 auto;
-    width: 900px;
+    background-color: var(--bg);
+    color: var(--href);
 }
 
 header {
-    background-color: #222222;
-    color: white;   
-    text-align: center;
-    padding: 40px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    height: auto;
+    width: auto;
+    padding: 25px;
+    overflow-x: auto;
 }
 
-h1 {
-    text-transform: uppercase;
+a {
+    color: var(--href);
 }
 
-input {
-    padding: 10px;
-    width: 100%;
-    border: none;
-    color: #222222;
-    font-size: 14px;
-    
-
-    &::placeholder {
-        color: #d6d6d6;
-    }
-
-   &:focus {
-    border-color: #222222;
-    outline: 0;
-    }
-}
-
-input[type=submit] {
-    background-color: #222222;
-    color: white;
-    width: 262px;
-    height: 50px;
-    font-size: 16px;
+button {
+    padding: 5px;
+    background-color: var(--button);
+    color: var(--href);
+    border-radius: 10px;
+    font-size: 18px;
     cursor: pointer;
-    text-transform: uppercase;
-    
- 
+
     &:hover {
-        filter: brightness(1.2);
-        
-    }
-
-    &:active {
-        filter: brightness(1);
-        
-    }
-
-    &:visited {
-        filter: brightness(0.8);
-        
+        filter: brightness(1.5);
+        transition: all .5s ease;
     }
 }
 
 main {
-    margin-top: 40px;
+    height: calc(100% - 75px);
+    background-color: var(--button);
+    border-radius: 25px 25px 0 0;
+    padding: 25px;
 }
-
-.content {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-/* Левый блок */
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 15rem;
-}
-
-
-/* Правый блок */
-
-#btn {
-    display: flex;
-    gap: 20px;
-}
-
-button {
-    background-color: #222222;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    text-transform: uppercase;
-
-    &:hover {
-        filter: brightness(1.2);
-    }
-
-    &:active {
-        filter: brightness(1);
-    }
-
-    &:visited {
-        filter: brightness(0.8);
-    }
-}
-
-#entry {
-    width: 60%;
-}
-
-/* Стили на результат */
-
-.result {
-    margin-top: 20px;
-    background: rgb(34,34,34);
-    background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(20,20,20,1) 100%);
-    color: white;
-    font-size: 17px;
-    width: 96%;
-    height: 12rem;
-    padding: 10px;
-    overflow: auto;
-}
-
-ol {
-    margin-left: 20px;
-    margin-top: 1px;
-}
-
-
-
-/* Стили для скрола */
-
-.result::-webkit-scrollbar-track {
-    border: 1px solid #000;
-    padding: 2px 0;
-    background-color: #404040;
-  }
-  .result::-webkit-scrollbar {
-    width: 10px;
-  }
-  .result::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #737272;
-    border: 1px solid #000;
-  }
