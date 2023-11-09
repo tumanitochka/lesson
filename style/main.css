@@ -80,12 +80,9 @@ pre {
 .up {
     display: flex;
     justify-content: center;
-    background-color: var(--bg);
     transform: rotate(-90deg);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 32px;
+    font-size: 80px;
+    color: var(--bg);
 
     position: absolute;
     bottom: 5%;
