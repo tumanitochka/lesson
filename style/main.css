@@ -78,13 +78,12 @@ pre {
 }
 
 .up {
-    display: flex;
-    justify-content: center;
     transform: rotate(-90deg);
+    transition: all .5s ease-in-out;
     font-size: 80px;
     color: var(--bg);
 
     position: fixed;
-    bottom: 5%;
-    right: 5%;
+    bottom: 2%;
+    right: 3%;
 }
