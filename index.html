@@ -16,16 +16,58 @@
         <button>Функции</button>
     </header>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate perspiciatis numquam dolorum pariatur odio ab facere ducimus possimus exercitationem, similique in ipsam, eligendi rerum eius voluptatem officia perferendis corrupti!
-        Nulla suscipit earum tenetur? Iste accusantium hic commodi deserunt optio pariatur beatae eligendi itaque obcaecati velit consequatur id harum, quibusdam ad suscipit similique molestiae aliquam quaerat quia. Aliquam, optio maiores!
-        Sunt error, optio animi molestiae velit tempora neque consequatur non? Odio quas, vero similique porro excepturi temporibus consectetur eum numquam quidem quam laborum ullam officia? Maiores quod dicta voluptate rem.
-        Blanditiis facilis eligendi nihil. Ab, cum laboriosam. Nisi, excepturi atque mollitia qui, itaque voluptate voluptates reprehenderit et necessitatibus nostrum obcaecati, iure dolor quos deleniti aperiam totam delectus. Aliquam, expedita natus.
-        Cum mollitia illum molestias quaerat doloremque impedit voluptas adipisci, maxime fuga, consequuntur pariatur ex ipsa. Voluptatum, quod fugiat saepe sint aspernatur odit ea. Perferendis quae pariatur eligendi, quas omnis rem.
-        Quibusdam, accusantium ea. Nostrum modi ab pariatur soluta, quasi consequuntur eum voluptate facilis illo debitis ea, dicta libero optio illum explicabo temporibus sapiente praesentium. Atque maxime iure molestiae deleniti vero.
-        Dignissimos nostrum similique animi non quia nam aperiam qui possimus laboriosam laborum, iusto dolor voluptate omnis sequi necessitatibus doloremque, molestiae fugiat repellendus debitis amet alias itaque adipisci? Vitae, iure nostrum!
-        Minima modi, explicabo aut saepe harum facere veritatis quas aperiam ratione eius quae sed, incidunt voluptates adipisci tempora accusamus cum deleniti? Odit aperiam repudiandae illum voluptatibus ex quisquam, corporis id!
-        Ex eligendi odio obcaecati laudantium magnam, modi vero nesciunt quo eius repellendus velit tempora voluptate illum atque optio dignissimos. Autem voluptate dolorum ut iste unde dignissimos quisquam, quo perferendis consequuntur!
-        Et laborum iure fugit earum aspernatur explicabo reiciendis voluptate similique adipisci provident! Consequuntur mollitia ipsam cumque optio quidem nihil sed quae facere animi, incidunt soluta deserunt culpa facilis accusantium autem.</p>
+        <pre>1. Promise (Обещание):
+            Promise - это объект, представляющий асинхронную операцию, которая может завершиться успешно (resolve) или с ошибкой (reject). Промисы позволяют более четко и удобно управлять асинхронным кодом.
+         
+            Пример создания промиса:
+            const myPromise = new Promise((resolve, reject) => {
+              // Асинхронный код, который может завершиться успешно или с ошибкой
+              if (/* условие */) {
+                resolve('Успех!'); // В случае успешного выполнения
+              } else {
+                reject('Ошибка!'); // В случае ошибки
+              }
+            });
+           
+         2. async и await:
+            async и await - это синтаксический сахар для работы с промисами, который делает асинхронный код более читаемым и удобным.
+         
+            Пример использования async и await:
+            async function fetchData() {
+              try {
+                const response = await fetch('https://dummyjson.com/products');
+                const data = await response.json();
+                return data;
+              } catch (error) {
+                console.error('Ошибка:', error);
+              }
+            }
+           
+         3. Практические примеры:
+         
+            Пример 1: Загрузка данных с сервера с использованием async/await:
+            async function fetchData() {
+              try {
+                const response = await fetch('https://dummyjson.com/products');
+                const data = await response.json();
+                return data;
+              } catch (error) {
+                console.error('Ошибка:', error);
+              }
+            }
+           
+            Пример 2: Параллельное выполнение нескольких асинхронных операций с Promise.all:
+            async function fetchMultipleData() {
+              const promises = [fetchData1(), fetchData2(), fetchData3()];
+              const data = await Promise.all(promises);
+              return data;
+            }
+          
+            Пример 3: Цепочка обработки данных с промисами:
+            fetch(url)
+              .then(data => data.json())
+              .then(json => console.log(json))
+              .catch(error => console.log(error));</pre>
     </main>
 </body>
 </html>
