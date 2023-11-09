@@ -2,36 +2,92 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
     <style>
-        body{
-            background-color: #dcaa91;
-            color: #674134;
+        :root {
+    --bg: #573d40;
+    --href: #e6b9a6;
+    --button: #d38778;
+}
 
-            width: 800px;
-            margin: 0 auto;
-        }
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--href);
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    height: auto;
+    width: auto;
+    padding: 25px;
+    overflow-x: auto;
+}
+
+a {
+    color: var(--href);
+}
+
+button {
+    padding: 5px;
+    background-color: var(--button);
+    color: var(--href);
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(1.5);
+        transition: all .5s ease;
+    }
+}
+
+main {
+    height: calc(100% - 75px);
+    background-color: var(--button);
+    border-radius: 25px 25px 0 0;
+    padding: 25px;
+}
     </style>
 </head>
 <body>
-    <h1><b>Три богатыря</b></h1>
-    <img src="https://upload.wikimedia.org/wikipedia/ru/9/92/%D0%A2%D1%80%D0%B8_%D0%B1%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D1%80%D1%8F_%28%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%B6%D0%B8_%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D0%BE%D0%B2%29.jpg" alt="Три богатыря">
-    <p>«<b>Три богатыря</b>» — российская приключенческая комедийная франшиза, куда входят полнометражные мультипликационные фильмы, повествующих о приключениях трёх самых известных богатырей — Алёши Поповича, Добрыни Никитича и Ильи Муромца. Мультфильмы были созданы анимационной студией «Мельница» и кинокомпанией «СТВ». Осенью 2008 года был выпущен сборник первых трёх частей от концерна «Союз». Начиная с 2010 года, фильмы этой серии стали выходить в составе сборников.</p>
-    <p>На данный момент вышло одиннадцать фильмов: десять частей из основной серии - «Алёша Попович и Тугарин Змей» (2004), «Добрыня Никитич и Змей Горыныч» (2006), «Илья Муромец и Соловей-Разбойник» (2007), «<b>Три богатыря</b> и Шамаханская царица» (2010), «<b>Три богатыря</b> на дальних берегах» (2012), «<b>Три богатыря</b>: Ход конём» (2015), «<b>Три богатыря</b> и морской царь» (2016), «<b>Три богатыря</b> и принцесса Египта» (2017), «<b>Три богатыря</b> и наследница престола» (2018) и «<b>Три богатыря</b> и Конь на троне» (2021) и один спин-офф - «Конь Юлий и большие скачки» (2020). Во франшизе также были выпущены дополнительные новеллизации, основанные на сиквелах, и компьютерные игры.</p>
-    <p>Франшиза получила неоднозначный приём критиков. Больше всего ругали частый выход новых частей, а также проблемы в анимации. Однако в настоящее время серия собрала более 135 миллионов долларов, что сделало его самым кассовым российским анимационным фильмом и одним из самых прибыльных российских фильмов за последние 10 лет.</p>
-    <h2>Мультфильмы:</h2>
-    <ol>
-        <li>Алёша Попович и Тугарин Змей</li>
-        <li>Добрыня Никитич и Змей Горыныч</li>
-        <li>Илья Муромец и Соловей-Разбойник</li>
-        <li><b>Три богатыря</b> и Шамаханская царица</li>
-        <li><b>Три богатыря</b> на дальних берегах</li>
-        <li><b>Три богатыря</b>. Ход конём</li>
-        <li><b>Три богатыря</b> и морской царь</li>
-        <li><b>Три богатыря</b> и принцесса Египта</li>
-        <li><b>Три богатыря</b> и наследница престола</li>
-        <li>Конь Юлий и большие скачки</li>
-    </ol>
+    <header>
+        <button>Промисы</button>
+        <button>Классы</button>
+        <button>Колбэк</button>
+        <button>Массивы</button>
+        <button>Функции</button>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate perspiciatis numquam dolorum pariatur odio ab facere ducimus possimus exercitationem, similique in ipsam, eligendi rerum eius voluptatem officia perferendis corrupti!
+        Nulla suscipit earum tenetur? Iste accusantium hic commodi deserunt optio pariatur beatae eligendi itaque obcaecati velit consequatur id harum, quibusdam ad suscipit similique molestiae aliquam quaerat quia. Aliquam, optio maiores!
+        Sunt error, optio animi molestiae velit tempora neque consequatur non? Odio quas, vero similique porro excepturi temporibus consectetur eum numquam quidem quam laborum ullam officia? Maiores quod dicta voluptate rem.
+        Blanditiis facilis eligendi nihil. Ab, cum laboriosam. Nisi, excepturi atque mollitia qui, itaque voluptate voluptates reprehenderit et necessitatibus nostrum obcaecati, iure dolor quos deleniti aperiam totam delectus. Aliquam, expedita natus.
+        Cum mollitia illum molestias quaerat doloremque impedit voluptas adipisci, maxime fuga, consequuntur pariatur ex ipsa. Voluptatum, quod fugiat saepe sint aspernatur odit ea. Perferendis quae pariatur eligendi, quas omnis rem.
+        Quibusdam, accusantium ea. Nostrum modi ab pariatur soluta, quasi consequuntur eum voluptate facilis illo debitis ea, dicta libero optio illum explicabo temporibus sapiente praesentium. Atque maxime iure molestiae deleniti vero.
+        Dignissimos nostrum similique animi non quia nam aperiam qui possimus laboriosam laborum, iusto dolor voluptate omnis sequi necessitatibus doloremque, molestiae fugiat repellendus debitis amet alias itaque adipisci? Vitae, iure nostrum!
+        Minima modi, explicabo aut saepe harum facere veritatis quas aperiam ratione eius quae sed, incidunt voluptates adipisci tempora accusamus cum deleniti? Odit aperiam repudiandae illum voluptatibus ex quisquam, corporis id!
+        Ex eligendi odio obcaecati laudantium magnam, modi vero nesciunt quo eius repellendus velit tempora voluptate illum atque optio dignissimos. Autem voluptate dolorum ut iste unde dignissimos quisquam, quo perferendis consequuntur!
+        Et laborum iure fugit earum aspernatur explicabo reiciendis voluptate similique adipisci provident! Consequuntur mollitia ipsam cumque optio quidem nihil sed quae facere animi, incidunt soluta deserunt culpa facilis accusantium autem.</p>
+    </main>
 </body>
 </html>
