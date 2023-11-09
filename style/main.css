@@ -60,3 +60,9 @@ main {
     padding: 25px;
     overflow-x: auto;
 }
+
+pre {
+    background-color: var(--bg);
+    overflow-x: auto;
+    padding: 5px;
+}
