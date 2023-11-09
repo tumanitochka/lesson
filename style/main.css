@@ -12,6 +12,7 @@
     border: none;
     background: none;
     box-shadow: none;
+    text-decoration: none;
 }
 
 html,
@@ -74,4 +75,19 @@ pre {
     overflow-x: auto;
     padding: 5px 10px;
     border-radius: 20px;
+}
+
+.up {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg);
+    transform: rotate(-90deg);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 32px;
+
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
 }
