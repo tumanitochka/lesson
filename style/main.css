@@ -54,7 +54,9 @@ button {
 
 main {
     height: calc(100% - 91px);
+    width: auto;
     background-color: var(--button);
     border-radius: 25px 25px 0 0;
     padding: 25px;
+    overflow: auto;
 }
