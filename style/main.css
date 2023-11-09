@@ -58,10 +58,14 @@ main {
     background-color: var(--button);
     border-radius: 25px 25px 0 0;
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 pre {
     background-color: var(--bg);
     overflow-x: auto;
-    padding: 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
 }
