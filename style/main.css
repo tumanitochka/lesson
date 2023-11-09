@@ -1,6 +1,7 @@
 :root {
     --bg: #573d40;
     --href: #e6b9a6;
+    --active: #322732;
     --button: #d38778;
 }
 
@@ -45,9 +46,10 @@ button {
     border-radius: 20px;
     font-size: 18px;
     cursor: pointer;
+    
 
     &:hover {
-        filter: brightness(1.5);
+        background-color: var(--active);
         transition: all .5s ease;
     }
 }
