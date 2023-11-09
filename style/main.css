@@ -53,12 +53,11 @@ button {
 }
 
 main {
-    height: calc(100% - 91px);
+    height: auto;
     width: auto;
     background-color: var(--button);
     border-radius: 25px 25px 0 0;
     padding: 25px;
-    overflow-x: auto;
 }
 
 pre {
