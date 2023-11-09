@@ -13,12 +13,6 @@
     background: none;
     box-shadow: none;
     text-decoration: none;
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
-}
-
--webkit-scrollbar {
-    width: 0;
 }
 
 html,
@@ -39,7 +33,14 @@ header {
     height: auto;
     width: auto;
     padding: 25px;
+
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
     overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+    }
 }
 
 a {
