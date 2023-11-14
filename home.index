@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статья о котиках</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 900px;
+            margin: auto;
+        }
+
+        header,
+        footer {
+            background-color: green;
+            color: aliceblue;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .flex {
+            display: flex;
+            gap: 20px;
+        }
+
+        .cat {
+            background-color: cadetblue;
+            min-width: 150px;
+            height: 150px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Котики в Сочи</h1>
+    </header>
+    <main>
+        <br>
+        <div class="flex">
+            <div class="cat"></div>
+            <div>
+                <h2>Lorem ipsum dolor sit</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quae quisquam rerum quidem, blanditiis
+                    accusantium culpa cumque rem necessitatibus facilis corrupti laboriosam dolorem, minus eos sequi
+                    libero animi porro atque.</p>
+            </div>
+        </div>
+        <br>
+        <div class="flex">
+
+            <div>
+                <h2>Lorem ipsum dolor sit</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quae quisquam rerum quidem, blanditiis
+                    accusantium culpa cumque rem necessitatibus facilis corrupti laboriosam dolorem, minus eos sequi
+                    libero animi porro atque.</p>
+            </div>
+            <div class="cat"></div>
+        </div>
+        <br>
+        <div class="flex">
+            <div class="cat"></div>
+            <div>
+                <h2>Lorem ipsum dolor sit</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quae quisquam rerum quidem, blanditiis
+                    accusantium culpa cumque rem necessitatibus facilis corrupti laboriosam dolorem, minus eos sequi
+                    libero animi porro atque.</p>
+            </div>
+        </div>
+    </main><br>
+    <footer>
+        <h2> © 2023</h2>
+    </footer>
+</body>
+
+</html>
