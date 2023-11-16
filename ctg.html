@@ -1,79 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    * {
-  margin: 0;
-  padding: 0;
-}
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-body{
-  background-color: burlywood;
-}
+        body {
+            background-color: burlywood;
+        }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin-top: 50px;
-}
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
 
-img {
-  position: relative;
-  top: -30px;
-  width: 240px;
-  height: 180px !important;
-  height: auto;
-  border-radius: 10px;
-}
+        img {
+            position: relative;
+            top: -10px;
+            height: 180px !important;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            transform: scale(1.05);
+        }
 
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 240px;
-  height: 400px;
-  padding: 5px;
-  background: rgb(231,171,92);
-background: linear-gradient(0deg, rgba(231,171,92,1) 35%, rgba(231,195,147,1) 100%);
-  border-radius: 10px;
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 240px;
+            height: 400px;
+            padding: 5px;
+            border: solid 2px #e7c393;
+            border-radius: 10px;
 
-  &:hover {
-    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    transition: all .2s ease;
-  }
-}
+            &:hover {
+                -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+                -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+                box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+                transition: all .2s ease;
+            }
+        }
 
-p {
-  text-wrap: balance;
-}
+        p {
+            text-wrap: balance;
+        }
 
-button {
-  background-color: rgb(222, 184, 135);
-  color:white;
-  cursor: pointer;
-  border: none;
-  padding: 10px 5px;
-  filter: grayscale(.4);
-  width: 80%;
-  margin: 0 auto;
+        button {
+            background-color: rgb(222, 184, 135);
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px 5px;
+            filter: grayscale(.6);
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 10px;
 
-  
-  &:hover {
-    filter: grayscale(0);
-    transition: all .3s ease;
-  }
-}
+            &:hover {
+                filter: grayscale(0) brightness(1.1);
+                transition: all .5s ease;
+            }
+        }
     </style>
 </head>
+
 <body>
     <main></main>
     <script>
@@ -83,7 +85,7 @@ button {
                 const json = await response.json()
                 const products = json.products
                 const ol = document.querySelector('main')
-                
+
 
                 products.forEach(function (prod) {
                     let section = document.createElement('section')
@@ -93,7 +95,7 @@ button {
                     image.src = prod.images[1]
                     section.appendChild(image)
 
-                    
+
 
                     let span = document.createElement('span')
                     span.innerHTML = 'Бренд: ' + '<b>' + prod.brand + '</b>'
@@ -107,7 +109,7 @@ button {
                     p.innerHTML = prod.description
                     section.appendChild(p)
 
-                    
+
 
                     let button = document.createElement('button')
                     let price = prod.price - prod.discountPercentage
@@ -119,7 +121,8 @@ button {
             }
         }
 
-catalog()
+        catalog()
     </script>
 </body>
+
 </html>
