@@ -64,6 +64,10 @@
             text-wrap: balance;
         }
 
+        .last_price {
+            opacity: .5;
+        }
+
         button {
             background-color: rgb(222, 184, 135);
             color: white;
@@ -119,8 +123,8 @@
 
 
                     let button = document.createElement('button')
-                    let price = prod.price - prod.discountPercentage
-                    button.innerHTML = 'Купить за ' + '<b>' + price + '</b>' + '$ ' + '<s>' + prod.price + '$</s>'
+                    let price = Math.round(prod.price - prod.discountPercentage)
+                    button.innerHTML = 'Купить за ' + '<b>' + price + '</b>' + '$ ' + '<s class="last_price">' + prod.price + '$</s>'
                     section.appendChild(button)
                 })
             } catch (error) {
